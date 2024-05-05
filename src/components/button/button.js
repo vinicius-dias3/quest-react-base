@@ -3,7 +3,7 @@ import './button.css'
 
 const Button = ({label, color})=> {
     const sendLabeltoAlert = ()=> {
-        alert(`A label deste botão é "${label}"`)
+        alert(`A label deste botão é "${label}".`)
     }
     return (
         <button className='btn' style={{color}} onClick={sendLabeltoAlert}>{label}</button>

@@ -1,21 +1,18 @@
 import React from "react"
 import './card.css'
 
-const Card = ({text}) => {
+const Card = ({text, color}) => {
+    const textToUpperCase = text.toUpperCase()
+
     return (
         <div className="card">
-            <Paragrafo text={text} />
+            <p style={{color}}>{textToUpperCase}</p>
         </div>
     )
 }
 
-function Paragrafo({text, color}){
-    const textToUpperCase = text.toUpperCase()
-    return <p style={{color}}>{textToUpperCase}</p>
-}
 
-
-Paragrafo.defaultProps = {
+Card.defaultProps = {
     color: '#122750'
 }
 
