@@ -1,13 +1,8 @@
-import './button.css'
+import './index.css'
 
 
 const Button = ({label, color})=> {
-    const sendLabeltoAlert = ()=> {
-        alert(`A label deste botão é "${label}".`)
-    }
-    return (
-        <button className='btn' style={{color}} onClick={sendLabeltoAlert}>{label}</button>
-    )
+    return <button className='btn' style={{color}} onClick={()=> alert(`A label deste botão é "${label}".`)}>{label}</button>
 }
 
 Button.defaultProps = {

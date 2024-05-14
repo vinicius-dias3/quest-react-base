@@ -1,5 +1,5 @@
 import React from "react"
-import './card.css'
+import './index.css'
 
 const Card = ({text, color}) => {
     const textToUpperCase = text.toUpperCase()
